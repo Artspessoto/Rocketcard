@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rocketcard</title>
+  </head>
+  <body>
+   
+    <main>
+      
+      <div class="formWrapper">
+        <h2>Compartilhe seu #rocketcard</h2>
+        <div class="borderCard" id="borderCard">
+          <form class="card" action="">
+            <div class="name">
+              <img class="logoProfile" src="assets/logo.svg" alt="" />
+              <!-- nome do usuário -->
+              <p id="userName"></p>
+            </div>
+            <div class="infoWrapper">
+              <!-- Controlador das info  -->
+              <div class="informations" action="">
+                <!-- Seguidores -->
+                <div id="followers">
+                  <img class="followLogo" src="assets/followers.svg" alt="" />
+                  <div id="numberFollow"></div>
+                  Seguidores
+                </div>
+  
+                <!-- Seguindo  -->
+                <div id="following">
+                  <img class="followingLogo" src="assets/following.svg" alt="" />
+                  <div id="numberFollowing"></div>
+                  Seguindo
+                </div>
+  
+                <!-- Repositórios -->
+                <div id="repositories">
+                  <img
+                    class="repositoryLogo"
+                    src="assets/repository.svg"
+                    alt=""
+                  />
+                  <div id="numberRepository"></div>
+                  Repositórios
+                </div>
+  
+                <!-- Company -->
+                <div id="job">
+                  <img class="companyLogo" src="assets/company.svg" alt="" />
+                  <div id="company"></div>
+                </div>
+  
+                <!-- Location/City  -->
+                <div id="city">
+                  <img class="cityLogo" src="assets/location.svg" alt="" />
+                  <div id="location"></div>
+                </div>
+  
+              </div>
+            </div>
+            <div class="imageControl">
+              <img id="picture" src="" alt="profile-github" />
+            </div>
+          </form>
+        </div>
+        <div class="btnControl">
+          <p>Customizar Rocketcard</p>
+          <button class="btnBorder" id="btnBorder" onclick="changeColor()">Gerar Background</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="api/api.js"></script>
+</html>
